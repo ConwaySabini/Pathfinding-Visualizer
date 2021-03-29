@@ -1,6 +1,4 @@
 
-
-//TODO MAKE UI LOOK LIKE MINE
 //TODO, Add Mazes with generation
 //TODO, Error handling
 //TODO, Add Bidirectional Searching support

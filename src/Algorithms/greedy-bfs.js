@@ -23,7 +23,7 @@ function euclidean(row, col, dest) {
         + (col - dest.col) * (col - dest.col)));
 }
 
-function manhattan(row, col, dest) {
+/*function manhattan(row, col, dest) {
     // Manhattan distance formula
     return (Math.abs(row - dest.row) + Math.abs(col - dest.col));
 }
@@ -31,7 +31,7 @@ function manhattan(row, col, dest) {
 function diagonal(row, col, dest) {
     // diagonal distance formula
     return (Math.max(Math.abs(row - dest.row), Math.abs(col - dest.col)));
-}
+}*/
 
 export function getGreedPath(finishNode) {
     const path = [];
