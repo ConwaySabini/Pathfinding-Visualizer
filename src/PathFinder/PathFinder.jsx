@@ -27,6 +27,7 @@ export default class PathFinder extends Component {
             finding: false,
             isWeight: false,
             isRemove: false,
+            loading: false,
         };
     }
 
@@ -128,7 +129,7 @@ export default class PathFinder extends Component {
         const { finding, grid } = this.state;
         if (!finding) {
             for (let i = 0; i < grid.length; i++) {
-                const row = grid[i]
+                const row = grid[i];
                 for (let j = 0; j < row.length; j++) {
                     const node = row[j];
                     if (node.isFinish) {
@@ -151,7 +152,7 @@ export default class PathFinder extends Component {
             const grid = getGrid();
             this.setState({ grid });
             for (let i = 0; i < grid.length; i++) {
-                const row = grid[i]
+                const row = grid[i];
                 for (let j = 0; j < row.length; j++) {
                     const node = row[j];
                     if (node.isFinish) {
@@ -168,7 +169,7 @@ export default class PathFinder extends Component {
         }
     }
 
-    clearPath() { // FIX bug where path nodes are
+    clearPath() { // TODO FIX bug where path nodes are
         const { finding, grid } = this.state;
         if (!finding) {
             for (let i = 0; i < grid.length; i++) {
